@@ -10,13 +10,13 @@ import { consultarApi } from '../helper/queries';
 
 const FormularioTarea = () => {
 
-    // const [arregloTarea, setArregloTarea] = useState([])
+    const [arregloTarea, setArregloTarea] = useState([])
 
-    // useEffect(()=>{
-    //   consultarApi().then((respuesta)=>{
-    //      setArregloTarea(respuesta)
-    //   })
-    // },[])
+    useEffect(()=>{
+      consultarApi().then((respuesta)=>{
+         setArregloTarea(respuesta)
+      })
+    },[])
 
 
     const{register,handleSubmit,formState:{errors}}=useForm()
@@ -25,6 +25,7 @@ const FormularioTarea = () => {
     const onSubmit = (data)=>{
        crearTarea(data).then((respuesta)=>{
         if(respuesta.status === 201){
+             setArregloTarea([...arregloTarea,data])
             console.log("tarea agregada")
         }else{
             console.log("error al agregar tarea")
@@ -52,8 +53,7 @@ const FormularioTarea = () => {
             </Form.Text>
             <button className='btn btn-primary'>enviar</button>
             </form>
-            {/* <ListaTarea  arregloTarea={arregloTarea}></ListaTarea> */}
-            <ListaTarea></ListaTarea>
+            <ListaTarea arregloTarea={arregloTarea}></ListaTarea>
         </div>
     );
 };

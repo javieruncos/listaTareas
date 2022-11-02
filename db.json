@@ -23,6 +23,22 @@
     {
       "nombreTarea": "cocinar",
       "id": 6
+    },
+    {
+      "nombreTarea": "cocinar",
+      "id": 7
+    },
+    {
+      "nombreTarea": "cocinar",
+      "id": 8
+    },
+    {
+      "nombreTarea": "lavar auto",
+      "id": 9
+    },
+    {
+      "nombreTarea": "estudiar javascript",
+      "id": 10
     }
   ]
 }
