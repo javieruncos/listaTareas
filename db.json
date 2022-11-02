@@ -1,0 +1,28 @@
+{
+  "tarea": [
+    {
+      "nombreTarea": "estudiar",
+      "id": 1
+    },
+    {
+      "nombreTarea": "reparar auto",
+      "id": 2
+    },
+    {
+      "nombreTarea": "actividad fisica",
+      "id": 3
+    },
+    {
+      "nombreTarea": "limpiar jardin",
+      "id": 4
+    },
+    {
+      "nombreTarea": "lavar auto",
+      "id": 5
+    },
+    {
+      "nombreTarea": "cocinar",
+      "id": 6
+    }
+  ]
+}

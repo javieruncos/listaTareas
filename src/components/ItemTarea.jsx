@@ -1,10 +1,10 @@
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 
-const ItemTarea = () => {
+const ItemTarea = ({tarea}) => {
     return (
         <div>
-            <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+            <ListGroup.Item>{tarea.nombreTarea}</ListGroup.Item>
         </div>
     );
 };
