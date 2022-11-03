@@ -5,7 +5,7 @@ import { consultarApi, borrarTarea } from "../helper/queries";
 const ItemTarea = ({ tarea, setArregloTarea }) => {
     
   const borrar = () => {
-    borrarTarea(tarea.id).then((respuesta) => {
+    borrarTarea(tarea._id).then((respuesta) => {
       if (respuesta.status === 200) {
         consultarApi().then((respuesta) => {
           setArregloTarea(respuesta);

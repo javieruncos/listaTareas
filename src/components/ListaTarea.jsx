@@ -10,7 +10,7 @@ const ListaTarea = ({arregloTarea,setArregloTarea}) => {
         <div className='w-75 mx-auto mt-5'>
         <ListGroup>
             {
-                arregloTarea.map((item)=><ItemTarea  tarea={item} key={item.id} setArregloTarea={setArregloTarea}/>)
+                arregloTarea.map((item)=><ItemTarea  tarea={item} key={item._id} setArregloTarea={setArregloTarea}/>)
             }
          
         </ListGroup>
