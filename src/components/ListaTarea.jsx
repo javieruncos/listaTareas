@@ -4,18 +4,13 @@ import ItemTarea from './ItemTarea';
 
 
 
-const ListaTarea = ({arregloTarea}) => {
+const ListaTarea = ({arregloTarea,setArregloTarea}) => {
     
-
-
-
-
-
     return (
-        <div className='w-50 mx-auto'>
+        <div className='w-75 mx-auto mt-5'>
         <ListGroup>
             {
-                arregloTarea.map((item)=>  <ItemTarea  tarea={item} key={item.id}/>)
+                arregloTarea.map((item)=><ItemTarea  tarea={item} key={item.id} setArregloTarea={setArregloTarea}/>)
             }
          
         </ListGroup>

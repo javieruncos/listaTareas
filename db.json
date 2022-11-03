@@ -1,44 +1,12 @@
 {
   "tarea": [
     {
-      "nombreTarea": "estudiar",
-      "id": 1
-    },
-    {
-      "nombreTarea": "reparar auto",
-      "id": 2
-    },
-    {
-      "nombreTarea": "actividad fisica",
+      "nombreTarea": "lavar auto",
       "id": 3
     },
     {
-      "nombreTarea": "limpiar jardin",
-      "id": 4
-    },
-    {
-      "nombreTarea": "lavar auto",
-      "id": 5
-    },
-    {
-      "nombreTarea": "cocinar",
-      "id": 6
-    },
-    {
-      "nombreTarea": "cocinar",
-      "id": 7
-    },
-    {
-      "nombreTarea": "cocinar",
-      "id": 8
-    },
-    {
-      "nombreTarea": "lavar auto",
-      "id": 9
-    },
-    {
       "nombreTarea": "estudiar javascript",
-      "id": 10
+      "id": 7
     }
   ]
 }

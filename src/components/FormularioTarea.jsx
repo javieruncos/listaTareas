@@ -14,19 +14,21 @@ const FormularioTarea = () => {
 
     useEffect(()=>{
       consultarApi().then((respuesta)=>{
+        console.log(respuesta)
          setArregloTarea(respuesta)
       })
     },[])
 
 
-    const{register,handleSubmit,formState:{errors}}=useForm()
+    const{register,handleSubmit,formState:{errors},reset}=useForm()
 
 
     const onSubmit = (data)=>{
        crearTarea(data).then((respuesta)=>{
         if(respuesta.status === 201){
              setArregloTarea([...arregloTarea,data])
-            console.log("tarea agregada")
+          
+            reset()
         }else{
             console.log("error al agregar tarea")
         }
@@ -53,7 +55,7 @@ const FormularioTarea = () => {
             </Form.Text>
             <button className='btn btn-primary'>enviar</button>
             </form>
-            <ListaTarea arregloTarea={arregloTarea}></ListaTarea>
+            <ListaTarea arregloTarea={arregloTarea} setArregloTarea={setArregloTarea}></ListaTarea>
         </div>
     );
 };

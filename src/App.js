@@ -2,9 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'react-bootstrap';
 import FormularioTarea from './components/FormularioTarea';
-import ListaTarea from './components/ListaTarea';
-import { useEffect, useState } from 'react';
-import { consultarApi } from './helper/queries';
+
 
 function App() {
 
